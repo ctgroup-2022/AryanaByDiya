@@ -257,24 +257,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar a {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 0 10px 30px;
   color: #fff;
-  white-space: nowrap;
   transition: 0.3s;
-  font-size: 14px;
+}
+
+.navbar a:hover {
+  color: #c9d60e;
+}
+
+.navbar .active > a {
+  color: #c9d60e !important;
 }
 
 .navbar a i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
-}
-
-.navbar a:hover, .navbar .active, .navbar li:hover > a {
-  color: #c9d60e;
 }
 
 .navbar .dropdown ul {
@@ -650,9 +648,19 @@ section {
 }
 
 .section-bg {
-  background-color: #1a1814;
+  background: url(../images/pp33.png) center center no-repeat;
+  background-size: cover;
+  position: relative;
 }
-
+.section-bg::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
 .section-title {
   padding-bottom: 40px;
 }
@@ -912,9 +920,7 @@ section {
 }
 
 .menu .menu-content::after {
-  content: "......................................................................"
- "...................................................................."
- "....................................................................";
+ 
   position: absolute;
   left: 20px;
   right: 0;
@@ -1704,3 +1710,4 @@ section {
   font-size: 13px;
   color: #fff;
 }
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");

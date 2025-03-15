@@ -33,104 +33,88 @@
     </section><!-- End About Section -->
     
      
+    
+   
 
     <!-- ======= Menu Section ======= -->
-    <section id="menu" class="menu section-bg">
-      <div class="container" data-aos="fade-up">
+    <section id="menu" class="menu section-bg" >
+      <div class="container" data-aos="fade-up" style=" text-align: center;">
 
         <div class="section-title">
        
-          <p>Check Our Services</p>
+          <p >Check Our Services</p>
         </div>
-
-        
-
-        <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
- 
-              
-          <div class="col-lg-6 menu-item filter-specialty">
-            <img src="images/emoji88.png" style="height:60px;" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="web_development.php">Web Development</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              
-            </div>
+        <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <div class="card-content">
+          <a href="web_development.php"> <h5 class="card-title" style="color:white;font-family: 'Poppins'; font-size: 30px; font-weight: bold; text-align: center; margin-top: 20px; margin-center: 20px;">Web Development</h5></a>
+          
           </div>
-
-          <div class="col-lg-6 menu-item filter-starters">
-            <img src="images/emoji7.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="graphic_design.php">Graphic Designing</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <img src="images/emoji4.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="content_marketing.php">Content Marketing</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-             
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-specialty">
-            <img src="images/emoji5.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="seo.php">SEO Services</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-             
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-starters">
-            <img src="images/emoji6.webp" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="smo.php">SMO services</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <img src="images/emoji7.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="media.php">Media </a><span></span>
-            </div>
-            <div class="menu-ingredients">
-             
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <img src="images/emoji88.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="web_Design.php">Web Design Services</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-             
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-specialty">
-            <img src="images/emoji4.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="digital_marketing.php">Digital Marketing</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-             
-            </div>
-          </div>
-
         </div>
-
       </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <div class="card-content">
+          <a href="graphic_design.php"> <h5 class="card-title" style="color:white;font-family: 'Poppins';  font-size: 30px; font-weight: bold; text-align: center; margin-top: 20px; margin-center: 20px;">Graphic Design</h5></a>
+        
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <div class="card-content">
+          <a href="content_marketing.php"> <h5 class="card-title" style="color:white;font-family: 'Poppins';font-size: 30px; font-weight: bold; text-align: center; margin-top: 20px; margin-center: 20px;">Content Marketing</h5></a>
+        
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <div class="card-content">
+         
+            <a href="seo.php"> <h5 class="card-title" style="color:white; font-family: 'Poppins'; font-size: 30px; font-weight: bold; text-align: center; margin-top: 20px; margin-center: 20px;">SEO Services</h5></a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5" >
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <div class="card-content">
+          <a href="smo.php"> <h5 class="card-title" style="color:white; font-family: 'Poppins'; font-size: 30px; font-weight: bold; text-align: center; margin-top: 20px; margin-center: 20px;">SMO services</h5></a>
+         
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <div class="card-content">
+          <a href="media.php"> <h5 class="card-title" style="color:white;font-family: 'Poppins';  font-size: 30px; font-weight: bold; text-align: center; margin-top: 20px; margin-center: 20px;">Media </h5></a>
+         
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <div class="card-content">
+          <a href="digital_marketing.php"> <h5 class="card-title" style="color:white; font-family: 'Poppins';font-size: 30px; font-weight: bold; text-align: center; margin-top: 20px; margin-center: 20px;">Digital Marketing</h5></a>
+         
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <div class="card-content">
+         
+            <a href="e-commerce_solution.php"> <h5 class="card-title" style="color:white; font-family: 'Poppins'; font-size: 28px; font-weight: bold; text-align: center; margin-top: 20px; margin-center: 20px;">E-commerce Solutions</h5></a>
+       
+          </div>
+        </div>
+      </div>
+    </div>
+        </div>
     </section><!-- End Menu Section -->
 
     <!-- ======= Specials Section ======= -->

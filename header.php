@@ -27,6 +27,7 @@
 
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- =======================================================
   * Template Name: Restaurantly - v3.1.0
@@ -61,7 +62,7 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.php">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.php">Home</a></li>
           <li><a class="nav-link scrollto" href="about.php">About</a></li>
           <li class="dropdown" ><a href="index.php"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -80,15 +81,15 @@
               </li>
                 
               </li>
-              <li class="dropdown"><a href="digital_marketing.php"><span>Digital Marketing Services</span> <i class="bi bi-chevron-right"></i></a>
+              <li class="dropdown"><a href="digital_marketing.php"><span>Digital Marketing </span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                 <li class="dropdown"><a href="smm.php"><span>SMM Services</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Facebook Marketing</a>
+                <ul style="width: 200px; height: 300px;">
+                  <li><a href="facebook.php">Facebook Marketing</a>
                   
                 </li>
-                  <li><a href="#">Instagram marketing</a></li>
-                  <li><a href="#">Youtube Marketing</a></li>
+                  <li><a href="instagram.php">Instagram marketing</a></li>
+                  <li><a href="youtube.php">Youtube Marketing</a></li>
                   <li><a href="#">Linkedin Marketing</a></li>
                   <li><a href="#">Twitter Marketing</a></li>
                 </ul>
@@ -135,6 +136,7 @@
     <div class="container  text-center" data-aos="zoom-in" data-aos-delay="100">
       <div class="row">
         <div class="col-lg-7 pt-5">
+          
           <h1 >Elevating Your Vision <span> Innovating </span>Your <span>Growth</span></h1>
       
           <div class="btns">

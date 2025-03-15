@@ -1,42 +1,34 @@
 <?php include('navbar.php'); ?>
-      <!-- ======= About Section ======= -->
-       
-      <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-        <div class="row justify-content-center">
-          <div class="col-lg-12 text-center rounded-pill" style="background-color: yellow; height: 130px; margin-top:80px;">
-            <h1 style="font-weight: bolder; color:black; font-size: calc(1.9rem + 1vw); margin-top: calc(1rem + 1vw);">ABOUT US</h1>
-          </div>
-        </div>
-       </div>
+     <!-- ======= About Section ======= -->
+  <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
         <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2 mt-3" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
             <div class="about-img">
-            <img src="images/boy1.png" width="80%" alt="" style="margin-left: calc(20% + 1vw);">
+              <img src="images/boy1.png"  width="80%" alt="" style="margin-left: calc(20% + 1vw); margin-top: calc(10% + 1vw);" >
             </div>
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content mt-3">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-            <p >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" style="margin-top: calc(10% + 1vw);">
+            <h1>About Us – Aryana: Build Innovation.</h1>
+            <p class="fw-bold">
+            A digital marketing and web developer  agency where creativity meets innovation to transform your business into a digital powerhouse.
             </p>
             <ul>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              <li><i class="bi bi-check-circle"></i>
+              With a team of creative minds, strategic thinkers,
+               and tech enthusiasts.</li>
+              <li><i class="bi bi-check-circle"></i>Inspiring businesses to innovate and create meaningful connections with their audiences.
+              </li>
+              <li><i class="bi bi-check-circle"></i> We embrace new ideas and technologies to deliver groundbreaking solutions for our clients.</li>
             </ul>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
+            Our team of experts brings together a wealth of knowledge and creativity, ensuring that every project is handled with 
+            professionalism and passion. We are driven by the shared vision of making Aryana a trusted name in digital marketing worldwide.
             </p>
           </div>
         </div>
 
       </div>
     </section><!-- End About Section -->
-
 <?php include('footer.php'); ?>

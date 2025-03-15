@@ -27,6 +27,7 @@
 
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- =======================================================
   * Template Name: Restaurantly - v3.1.0
@@ -61,7 +62,7 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.php">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.php">Home</a></li>
           <li><a class="nav-link scrollto" href="about.php">About</a></li>
           <li class="dropdown" ><a href="index.php"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -84,10 +85,10 @@
                 <ul>
                 <li class="dropdown"><a href="smm.php"><span>SMM Services</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="#">Facebook Marketing</a>
+                  <li><a href="facebook.php">Facebook Marketing</a>
                   
                 </li>
-                  <li><a href="#">Instagram marketing</a></li>
+                  <li><a href="instagram.php">Instagram marketing</a></li>
                   <li><a href="#">Youtube Marketing</a></li>
                   <li><a href="#">Linkedin Marketing</a></li>
                   <li><a href="#">Twitter Marketing</a></li>
