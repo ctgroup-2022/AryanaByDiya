@@ -89,9 +89,9 @@
                   
                 </li>
                   <li><a href="instagram.php">Instagram marketing</a></li>
-                  <li><a href="#">Youtube Marketing</a></li>
-                  <li><a href="#">Linkedin Marketing</a></li>
-                  <li><a href="#">Twitter Marketing</a></li>
+                  <li><a href="youtube.php">Youtube Marketing</a></li>
+                  <li><a href="linkedin.php">Linkedin Marketing</a></li>
+                  <li><a href="twitter.php">Twitter Marketing</a></li>
                 </ul>
               </li>
                    <li><a href="#">Software Development</a></li>
@@ -104,9 +104,9 @@
                   <li><a href="#">Video Production</a>
                   
                 </li>
-                  <li><a href="#">Video Testimonial Services</a></li>
-                  <li><a href="#">Product Photography Services</a></li>
-                  <li><a href="#">Drone Video And Photography Services</a></li>
+                  <li><a href="#">Video Testimonial </a></li>
+                  <li><a href="#">Product Photography </a></li>
+                  <li><a href="#">Drone Video And Photography </a></li>
                   
                 </ul>
               </li>

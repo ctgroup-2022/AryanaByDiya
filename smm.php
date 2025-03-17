@@ -13,7 +13,7 @@
         <div class="row">
           <div class="col-lg-6 order-2 order-lg-1" data-aos="zoom-in" data-aos-delay="100">
             <div class="about-img">
-            <img src="images/.png" class="img-fluid" alt="">
+            <img src="images/smm3.webp" class="img-fluid" alt="">
             </div>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-2 content">

@@ -13,7 +13,7 @@
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
             <div class="about-img">
-            <img src="images/facebook.webp" alt="" >
+            <img src="images/facebook.webp " alt="" >
             </div>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" style="margin-top: calc(4rem + 1vw);">
