@@ -1,105 +1,204 @@
-<?php include('navbar.php'); ?>
-  <!-- ======= Events Section ======= -->
-  <section id="events" class="events">
-  <div class="container" data-aos="fade-up">
-        <div class="row justify-content-center">
-        <div class="col-lg-12 text-center rounded-pill" style="background-color: yellow; height: 130px; margin-top:90px;">
-            <h1 style="font-weight: bolder; color:black; font-size: calc(1.9rem + 1vw); margin-top: calc(1rem + 1vw);">Projects</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Creative Projects Slider</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f172a;
+      color: #e2e8f0;
+    }
+
+    .projects-section {
+      padding: 80px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      color: #38bdf8;
+    }
+
+    .section-title p {
+      font-size: 18px;
+      color: #facc15;
+      margin-top: 10px;
+    }
+
+    .swiper {
+      padding-bottom: 60px;
+    }
+
+    .swiper-slide {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
+      backdrop-filter: blur(12px);
+      overflow: hidden;
+      transition: transform 0.4s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .swiper-slide:hover {
+      transform: translateY(-10px);
+    }
+
+    .project-card {
+      padding: 20px;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .project-content {
+      margin-top: 20px;
+    }
+
+    .project-content h3 {
+      font-size: 22px;
+      color: #38bdf8;
+    }
+
+    .project-content p {
+      font-size: 14px;
+      margin: 10px 0;
+    }
+
+    .project-content ul {
+      padding-left: 20px;
+      font-size: 14px;
+    }
+
+    .project-content li {
+      margin-bottom: 6px;
+    }
+
+    .swiper-pagination-bullet {
+      background-color: #94a3b8;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: #38bdf8;
+    }
+
+    @media (min-width: 768px) {
+      .swiper-slide {
+        width: 380px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<section id="projects" class="projects-section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Projects</h2>
+      <p>Websites of Our Schools and Institutes</p>
+    </div>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Project 1 -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="images/project1.png" alt="CT Sunshine" />
+            <div class="project-content">
+              <h3>CT SUNSHINE</h3>
+              <p>Academic knowledge combined with cultural activities to shape global awareness.</p>
+              <ul>
+                <li>✅ Qualified & Trained Security Team</li>
+                <li>✅ Campus-Wide Surveillance</li>
+                <li>✅ Regular Counseling & Safety Drills</li>
+              </ul>
+            </div>
           </div>
         </div>
-       </div>
 
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title" style="margin-top: calc(1rem + 1vw);">
-          
-          <p>Websites Of Our Schools And Intitutes</p>
-        </div>
-
-        <div class="events-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="images/project1.png" class="img-fluid" alt="" style="margin-top: calc(1rem + 1vw);">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content" style="margin-top: calc(1rem + 1vw);">
-                  <h3>CT SUNSHINE</h3>
-                  <div class="price">
-                  
-                  </div>
-                  <p >
-                 Academic knowledge but 
-                  also experience a variety of cultural activities that shape their understanding of the world.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i>Qualified & Trained Security Team: Our dedicated team ensures a safe environment for all students.</li>
-                    <li><i class="bi bi-check-circled"></i>Security Surveillance Cameras: Strategically placed throughout the campus to monitor activities.</li>
-                    <li><i class="bi bi-check-circled"></i> Counseling Sessions and Emergency Drills: Regular workshops to prepare students for safety protocols.</li>
-                  </ul>
-                 
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="images/project2.png" class="img-fluid" alt="" style="margin-top: calc(1rem + 1vw);">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content" style="margin-top: calc(1rem + 1vw);">
-                  <h3>CT HALF-MARATHON</h3>
-                  <div class="price">
-                    
-                  </div>
-                  <p class="fst-italic">
-                  The CT Half Marathon, a Race for Charity, was conceived with the vision & foresight of S. Charanjit Singh Channi ( Chairman, CT Group of Institutions )
-                   to promote healthiness, robustness & fitness awareness. Since 2007.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i> Challenge yourself with 21 km or 7 km, racing toward a healthier, sustainable future. </li>
-                 
-                    <li><i class="bi bi-check-circled"></i> There is no separate category of participation such as Old Age, Under 19, and Under 21 etc. </li>
-                  </ul>
-                  <p>
-                  Athletes Bagging top three positions would be awarded a cash prize of Rs. 25,000/-, Rs.11,000/- and Rs. 5,100/- respectively.
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="images/project3.png" class="img-fluid" alt="" style="margin-top: calc(1rem + 1vw);">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content" style="margin-top: calc(1rem + 1vw);">
-                  <h3>CT WORLD</h3>
-                  <div class="price">
-                   
-                  </div>
-                  <p class="fst-italic">
-                  The students of CT Institute of Architecture and Planning. Visit for a live study of 
-                  “CT World School” for their designing and planning of the project i.e Group Housing. 
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i> The visit was done by 20 students of Architecture department.</li>
-                    <li><i class="bi bi-check-circled"></i>Practical applicability of design in building. </li>
-                    <li><i class="bi bi-check-circled"></i> Students understood the principles of design .</li>
-                  </ul>
-                  <p>
-                  Offline visit helped to gain a more profound understanding of planning such 
-                  a major project as it is a very important part before creating his/her idea as an Architect student.
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
+        <!-- Project 2 -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="images/project2.png" alt="CT Half Marathon" />
+            <div class="project-content">
+              <h3>CT HALF MARATHON</h3>
+              <p>A charity race fostering health and sustainability since 2007.</p>
+              <ul>
+                <li>✅ Choose from 7km or 21km challenges</li>
+                <li>✅ No category restrictions</li>
+                <li>✅ Cash prizes up to ₹25,000</li>
+              </ul>
+            </div>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
 
+        <!-- Project 3 -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="images/project3.png" alt="CT World" />
+            <div class="project-content">
+              <h3>CT WORLD</h3>
+              <p>Architecture students visit for a live study on Group Housing Design.</p>
+              <ul>
+                <li>✅ 20 Students Participated</li>
+                <li>✅ Real-world Planning Principles</li>
+                <li>✅ Hands-on Learning Experience</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more project slides as needed -->
+        
+
+       
       </div>
-    </section><!-- End Events Section -->
-<?php include('footer.php'); ?>
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 25,
+    loop: true,
+    grabCursor: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    }
+  });
+</script>
+
+</body>
+</html>

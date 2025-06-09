@@ -35,6 +35,55 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+     #navbar ul ul {
+  left: 100%;
+  top: 0;
+  margin-left: 0;
+  position: absolute;
+  display: none;
+  min-width: 200px;
+  z-index: 99;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+#navbar ul li:hover > ul,
+#navbar ul li:focus-within > ul {
+  display: block;
+}
+#navbar ul ul ul {
+  left: 100%;
+  top: 0;
+}
+#navbar ul li {
+  position: relative;
+}
+#navbar ul ul li a {
+  color: #222;
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+#navbar ul ul li a:hover {
+  background: #f7f7f7;
+  color: #007bff;
+}
+@media (max-width: 991px) {
+  #navbar ul ul,
+  #navbar ul ul ul {
+    position: static;
+    display: none;
+    box-shadow: none;
+    background: none;
+  }
+  #navbar ul li:hover > ul,
+  #navbar ul li:focus-within > ul,
+  #navbar ul ul li:hover > ul,
+  #navbar ul ul li:focus-within > ul {
+    display: block;
+  }
+}
+    </style>
 </head>
 
 <body>
@@ -64,32 +113,42 @@
         <ul>
           <li><a class="nav-link scrollto" href="index.php">Home</a></li>
           <li><a class="nav-link scrollto" href="about.php">About</a></li>
-          <li class="dropdown" ><a href="index.php"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+           <li class="dropdown" ><a href="index.php"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-            
+             <li class="dropdown"><a href="web_development.php"><span>SEO Services</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                 
+                  <li><a href="opensource.php">Outsource SEO</a></li>
+                  <li><a href="on-page.php">OnPage SEO</a></li>
+                  <li><a href="off-page.php">Off-PAge SEO </a></li>
+                  <li><a href="technical.php">Technical SEo </a></li>
+                 <li><a href="keyword.php">Keyword Research </a></li>
+                </ul>
+            </li>
                 
-            <li class="dropdown"><a href="smm.php"><span>Web Development</span> <i class="bi bi-chevron-right"></i></a>
+                
+            <li class="dropdown"><a href="web_development.php"><span>Web Development</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="#">Website Maintenance</a>
                   
-                </li>
+                  </li>
                   <li><a href="#">Website designing</a></li>
                   <li><a href="#">Database Development</a></li>
                   <li><a href="#">Mobile Development</a></li>
                   <li><a href="#">Application Development</a></li>
                 </ul>
-              </li>
+            </li>
                 
               </li>
-              <li class="dropdown"><a href="digital_marketing.php"><span>Digital Marketing Services</span> <i class="bi bi-chevron-right"></i></a>
+              <li class="dropdown"><a href="digital_marketing.php"><span>Digital Marketing </span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                 <li class="dropdown"><a href="smm.php"><span>SMM Services</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
+                <ul style="width: 200px; height: 300px;">
                   <li><a href="facebook.php">Facebook Marketing</a>
                   
                 </li>
                   <li><a href="instagram.php">Instagram marketing</a></li>
-                  <li><a href="youtube.php">Youtube Marketing</a></li>
+                  <li><a href="instagram.php"> Youtube marketing</a></li>
                   <li><a href="linkedin.php">Linkedin Marketing</a></li>
                   <li><a href="twitter.php">Twitter Marketing</a></li>
                 </ul>
@@ -99,14 +158,14 @@
                   <li><a href="#">Search Engine Marketing</a></li>
                 </ul>
               </li>
-              <li class="dropdown"><a href="smm.php"><span>Media</span> <i class="bi bi-chevron-right"></i></a>
+              <li class="dropdown"><a href="media.php"><span>Media</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="#">Video Production</a>
                   
                 </li>
-                  <li><a href="#">Video Testimonial </a></li>
+                  <li><a href="#">Video Testimonial</a></li>
                   <li><a href="#">Product Photography </a></li>
-                  <li><a href="#">Drone Video And Photography </a></li>
+                  <li><a href="#">Drone Video And Photography</a></li>
                   
                 </ul>
               </li>
@@ -117,7 +176,7 @@
                
                 </ul>
               </li>
-              <li><a href="#"></a></li>
+              
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="project.php">Projects</a></li>

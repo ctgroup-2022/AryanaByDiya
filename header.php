@@ -35,6 +35,188 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+  #hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg,rgb(29, 19, 79),rgb(20, 48, 62),rgb(7, 2, 40));
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+    padding-top: 80px;
+    z-index: 1;
+  }
+
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  #hero::before,
+  #hero::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+    opacity: 0.6;
+    filter: blur(80px);
+  }
+
+  #hero::before {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, #ec4899, transparent);
+    top: -100px;
+    left: -100px;
+    animation: floatBlob 8s infinite alternate ease-in-out;
+  }
+
+  #hero::after {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, #38bdf8, transparent);
+    bottom: -80px;
+    right: -80px;
+    animation: floatBlob 10s infinite alternate ease-in-out;
+  }
+
+  @keyframes floatBlob {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(30px) rotate(10deg); }
+  }
+
+  #hero h1 {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1.3;
+    z-index: 2;
+    position: relative;
+    background: linear-gradient(90deg, #38bdf8, #ec4899, #facc15, #38bdf8);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textGradient 6s ease infinite, fadeInUp 1s ease forwards;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+
+  @keyframes textGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  #hero h1 span {
+    display: inline-block;
+    animation: bounceIn 1.2s ease forwards;
+    animation-delay: 0.3s;
+    background: linear-gradient(90deg, #f472b6, #60a5fa, #34d399);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* ...existing code... */
+.btn-book {
+    background: linear-gradient(135deg, #f43f5e, #8b5cf6);
+    color: white;
+    padding: 14px 34px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 0 25px rgba(236, 72, 153, 0.5);
+    transition: 0.3s;
+    z-index: 2;
+    margin-top: 60px; /* Increased margin for more space above */
+    margin-bottom: 20px; /* Optional: add space below */
+    position: relative;
+    display: inline-block; /* Ensures button is sized to content */
+}
+/* ...existing code... */
+/* ...existing code... */
+#hero .container {
+    margin-top: 40px; /* Adjust as needed */
+}
+/* ...existing code... */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes bounceIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  @media (max-width: 768px) {
+    #hero {
+      padding-top: 120px;
+      height: auto;
+      text-align: center;
+    }
+
+    #hero h1 {
+      font-size: 36px;
+    }
+
+    .btn-book {
+      font-size: 16px;
+      padding: 12px 28px;
+    }
+  }
+  #navbar ul ul {
+  left: 100%;
+  top: 0;
+  margin-left: 0;
+  position: absolute;
+  display: none;
+  min-width: 200px;
+  z-index: 99;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+#navbar ul li:hover > ul,
+#navbar ul li:focus-within > ul {
+  display: block;
+}
+#navbar ul ul ul {
+  left: 100%;
+  top: 0;
+}
+#navbar ul li {
+  position: relative;
+}
+#navbar ul ul li a {
+  color: #222;
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+#navbar ul ul li a:hover {
+  background: #f7f7f7;
+  color: #007bff;
+}
+@media (max-width: 991px) {
+  #navbar ul ul,
+  #navbar ul ul ul {
+    position: static;
+    display: none;
+    box-shadow: none;
+    background: none;
+  }
+  #navbar ul li:hover > ul,
+  #navbar ul li:focus-within > ul,
+  #navbar ul ul li:hover > ul,
+  #navbar ul ul li:focus-within > ul {
+    display: block;
+  }
+}
+</style>
 </head>
 
 <body>
@@ -66,19 +248,34 @@
           <li><a class="nav-link scrollto" href="about.php">About</a></li>
           <li class="dropdown" ><a href="index.php"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-            
+             <li class="dropdown"><a href="seo.php"><span>SEO Services</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                
+                  
+                  </li>
+                  <li><a href="opensource.php">Outsource SEO</a></li>
+                  <li><a href="on-page.php">OnPage SEO</a></li>
+                  <li><a href="off-page.php">Off-PAge SEO </a></li>
+                  
+                  <li><a href="technical.php">Technical SEo </a></li>
+                 
+                  <li><a href="keyword.php">Keyword Research </a></li>
+                   <li><a href="#">CMS SEO </a></li>
+                </ul>
+            </li>
+                
                 
             <li class="dropdown"><a href="web_development.php"><span>Web Development</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="#">Website Maintenance</a>
                   
-                </li>
+                  </li>
                   <li><a href="#">Website designing</a></li>
                   <li><a href="#">Database Development</a></li>
                   <li><a href="#">Mobile Development</a></li>
                   <li><a href="#">Application Development</a></li>
                 </ul>
-              </li>
+            </li>
                 
               </li>
               <li class="dropdown"><a href="digital_marketing.php"><span>Digital Marketing </span> <i class="bi bi-chevron-right"></i></a>
@@ -130,26 +327,18 @@
 
     </div>
   </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
-    <div class="container  text-center" data-aos="zoom-in" data-aos-delay="100">
-      <div class="row">
-        <div class="col-lg-7 pt-5">
-          
-          <h1 >Elevating Your Vision <span> Innovating </span>Your <span>Growth</span></h1>
-      
-          <div class="btns">
-          
-            <a href="project.php" class="btn-book animated fadeInUp scrollto">More Detail</a>
-          </div>
-        </div>
-        <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
-          <a href="video/clg video (2).mp4" class="glightbox play-btn"></a>
-        </div>
-
+  <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <h1>
+          Elevating Your Vision <span>Innovating</span> Your <span>Growth</span>
+        </h1>
+        <a href="project.php" class="btn-book scrollto mt-4">Explore Projects</a>
+      </div>
+      <div class="col-lg-4 mt-5 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="300">
+        <a href="video/clg video (2).mp4" class="glightbox play-btn"></a>
       </div>
     </div>
-  </section><!-- End Hero -->
-
-  
+  </div>
+</section>
